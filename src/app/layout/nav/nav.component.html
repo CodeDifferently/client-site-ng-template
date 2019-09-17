@@ -1,0 +1,26 @@
+<section class="cover text-center">
+  <!-- <div id="overlay"></div> -->
+  <div class="nav-container">
+    <div class="nav-row">
+      <div class="nav-logo">
+        <a routerLink="/home">
+          
+          <div class="nav-logo-image nav-logo-image-white" alt="CodeDifferently">
+          </div>
+        </a>
+      </div>
+      <div class="nav-controls">
+        <a *ngFor="let item of navItems" routerLink="{{item.link}}"> {{ item.title }} </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-container pb-5">
+    
+    <div class="cover-inner container">
+      
+    </div>
+  </div>
+ 
+</section>
+
