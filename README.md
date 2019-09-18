@@ -1,27 +1,27 @@
-# ClientSitesNgTemplate
+## About Our Client Project
+* Client Project Has 3 Important Modules Core, App and Shared
+	* `Core Module` - should contain _**singleton**_* services (which is usually the case), universal components and other features where there’s only once instance per application.
+	* `App Module` - The Module that Bootstraps our application. Sets the ground rules for our applicaton(base routing, base layout, main imports)
+	* `Shared Module` - This is the common ground for all components that you want to share between modules and other components
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2.
 
-## Development server
+# Part 1 - Setting up client site project
+-
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* run command in your dev or sites directory in your terminal
+	* `git clone https://github.com/CodeDifferently/client-site-ng-template.git your-client-name-here`
+	* run command `npm install` afterwards to install any **_dependencies_*** that might have been added to the project so you can properly serve it
+* When creating pages you want to make them into _**`Modules`**_*.  
+	* create a module with: `ng g m pagename`
+		* if you want to make that module in a folder you generate this 		module under the directory name. i.e. `ng g m foldername/		pagename --routing`.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+		* We add the `--routing` flag to each module for sub folders and **_lazy loading_***
+			
+	
+## FAQ
+* What is a module?
+	*  In Angular, a module is a mechanism to group components, 		directives, pipes and services that are related or  in short a 		package of all the things we want to put together
+* What is lazy loading?
+	* Helps us decrease the startup time.
+* What is a dependency
+	* A dependency is usually an external module/package that can be **imported** into your program so you can use its components and features
