@@ -30,15 +30,15 @@
 	```json
 	"styles": [
 	"styles.css",
-	"../node_modules/bootstrap/dist/css/bootstrap.min.css"
+	"./node_modules/bootstrap/dist/css/bootstrap.min.css"
 	],
 	```
 4. In the same **src/app/app.module.ts** look for the _**scripts**_ array and add your jquery and bootstrap js.
 	
 	```json
 	"scripts": [
-	"node_modules/jquery/dist/jquery.min.js",
-    "node_modules/bootstrap/dist/js/bootstrap.min.js"
+	"./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.min.js"
     ]
 	```
 And *Wa-la* you can now use bootstrap as you would regularly.
